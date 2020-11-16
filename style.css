@@ -423,6 +423,51 @@ body {
 
 /* tabs section */
 
+.background {
+  background: #000;
+}
+
+.new {
+  overflow: hidden;
+}
+
+.new .nav-tabs {
+  border: 0;
+}
+
+.new .nav-link {
+  border: 0;
+  padding: 12px 15px;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 0;
+  border-right: 2px solid var(--mainColor);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.new .nav-link:hover {
+  color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.new .nav-1.active {
+  color: #1a1814;
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+}
+
+.new .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+.new .details p {
+  color: #fff;
+}
+
+.new .details p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 575px) {
   .about-des {
     margin-bottom: 53px;
