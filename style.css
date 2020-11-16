@@ -146,10 +146,6 @@ body {
   outline: none !important;
 }
 
-span .fa fa-bars {
-  font-family: "Roboto";
-}
-
 /* end of styling navbar */
 
 /* start of hero section */
@@ -550,6 +546,9 @@ span .fa fa-bars {
   .about .about-right-sec {
     padding-top: 50px;
   }
+  .about .experience span {
+    font-size: 45px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -559,20 +558,20 @@ span .fa fa-bars {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about .experience span {
-    font-size: 42px;
-  }
   .about .about-right-sec {
     padding-top: 50px;
   }
+  .about .experience span {
+    font-size: 42px;
+  }
 }
 
-@media (max-width: 575px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about .about-right-sec {
+    padding-top: 50px;
+  }
   .about .experience span {
     font-size: 45px;
-  }
-  .about .about-des p {
-    padding-right: 0px;
   }
 }
 
@@ -580,20 +579,17 @@ span .fa fa-bars {
   .about .about-des p {
     padding-right: 20px;
   }
-  .searchform {
-    width: 300px;
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .about .about-des p {
     padding-right: 0px;
   }
-  .about .experience span {
-    font-size: 45px;
-  }
-  .about .about-right-sec {
-    padding-top: 50px;
+}
+
+@media (max-width: 575px) {
+  .about .about-des p {
+    padding-right: 0px;
   }
 }
 
@@ -605,6 +601,7 @@ span .fa fa-bars {
 
 @media (max-width: 768px) {
   .hero {
+    width: 100%;
     height: 300px;
   }
   .hero h1 {
@@ -618,6 +615,9 @@ span .fa fa-bars {
   .main-navbar-light .navbar-nav > .nav-item > .nav-link {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
+  .social-media {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -628,9 +628,11 @@ span .fa fa-bars {
     padding-bottom: 2rem;
     color: rgba(255, 255, 255, 0.7);
   }
-
   .main-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
     color: #fff;
+  }
+  .main-navbar-light .navbar-nav {
+    padding-bottom: 10px;
   }
   .main-navbar-light {
     background: #000 !important;
@@ -638,15 +640,10 @@ span .fa fa-bars {
     top: 0;
     padding: 10px 15px;
   }
-  .main-navbar-light .navbar-nav {
-    padding-bottom: 10px;
-  }
   .social-media {
     margin: 0 auto;
   }
-}
-@media (max-width: 767px) {
-  .social-media {
-    margin: 20px;
+  .searchform {
+    width: 300px;
   }
 }
