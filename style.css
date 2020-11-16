@@ -293,7 +293,8 @@ body {
   height: 550px;
   margin: 0 auto;
   background: #fff;
-  box-shadow: 0 10px 40px var(--mainColor);
+  /* box-shadow: 0 10px 40px var(--mainColor); */
+  border: none;
 }
 
 .card .cover {
@@ -351,6 +352,76 @@ body {
 .card .cover.cover2 h2 {
   font-size: 2em;
 }
+
+/* review section */
+
+.text-box {
+  background: #f0c78156;
+  padding: 14px 24px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
+  position: relative;
+}
+
+.text-info a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #f0c78156;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.text-info a img {
+  border-radius: 50%;
+}
+
+.text-info h3 {
+  display: inline-block;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 8px;
+}
+
+.text-info h3 > span {
+  display: block;
+  line-height: 35px;
+  font-weight: 100;
+}
+
+.text-box:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-left: 0;
+  bottom: -40px;
+  left: 56px;
+  border-top-color: var(--mainColor);
+  border-width: 20px;
+}
+
+.text-box:before {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0;
+  height: 0;
+  bottom: -30px;
+  left: 45px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: transparent;
+  z-index: -1;
+  box-shadow: 3px -13px 5px 0px rgba(0, 0, 0, 0.18);
+  border-left: 0;
+}
+
+/* tabs section */
 
 @media (max-width: 575px) {
   .about-des {
